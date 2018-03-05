@@ -1,0 +1,14 @@
+@mixin cuadrados($ancho, $alto, $color){
+    width: $ancho;
+    height: $alto;
+    background-color: $color;
+    border-radius: 7px;
+    text-align: center;
+    margin: 5px;
+}
+@mixin circle($size, $color){
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    background-color: $color;
+}

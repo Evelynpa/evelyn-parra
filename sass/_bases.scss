@@ -1,0 +1,52 @@
+//fondo
+body{
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+.fondos{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+// header
+header{
+    background-image: url('../assets/img/fondo-morado.jpg');
+}
+h1{
+    margin: 2em 2em 0 2em;
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold
+}
+h2{
+    color: #fff;
+    margin-bottom: 2em
+}
+// Sobre mi
+#containerDatos{
+ background-image: url('../assets/img/fondo2.png');
+}
+.containerDatos{
+    padding: 1em;
+    padding-left: 5em
+}
+
+// logos programacion
+#colorImgLogos{
+    background-image: url('../assets/img/fondo-morado.jpg');
+}
+.imglogosIcon{
+    width: 8em;
+    margin: 2em
+}
+// projects
+.sectionProyects{
+    background-image: url('../assets/img/fondo2.png');
+}
+.imglogos{
+    width: 15em;
+    margin: 2em
+}
+
