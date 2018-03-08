@@ -5798,48 +5798,55 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
-  box-sizing: border-box;
-  font-family: 'Muli', sans-serif; }
+  font-family: 'Raleway', sans-serif; }
 
-.fondos {
+.header {
+  margin: 0;
+  background-image: url("../assets/img/fondoEscritorioDesenfoque.png");
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-size: cover;
-  position: relative; }
+  width: 100%;
+  height: 70vh; }
 
-header {
-  background-image: url("../assets/img/fondo-morado.jpg"); }
+.img-parallax {
+  position: fixed;
+  width: 20%;
+  height: 70vh;
+  right: 0; }
+
+#layer_1 {
+  background-image: url("../assets/img/cafe.png");
+  background-repeat: no-repeat;
+  background-position: 50% 200px;
+  margin-top: 0px;
+  background-size: 16em 16em; }
+
+.name {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  margin-top: 150px; }
 
 h1 {
-  margin: 2em 2em 0 2em;
-  color: #fff;
-  font-size: 4em;
-  font-weight: bold; }
+  color: #460180;
+  display: block;
+  font-size: 90px;
+  letter-spacing: 0px;
+  line-height: 60px;
+  padding-top: 5px;
+  text-shadow: 0 8px 8px rgba(0, 0, 0, 0.5), 0 -2px 1px #ccc;
+  text-transform: uppercase;
+  font-weight: 800; }
 
 h2 {
-  color: #fff;
-  margin-bottom: 2em; }
-
-#containerDatos {
-  background-image: url("../assets/img/fondo2.png"); }
-
-.containerDatos {
-  padding: 1em;
-  padding-left: 5em; }
-
-#colorImgLogos {
-  background-image: url("../assets/img/fondo-morado.jpg"); }
-
-.imglogosIcon {
-  width: 8em;
-  margin: 2em; }
-
-.sectionProyects {
-  background-image: url("../assets/img/fondo2.png"); }
-
-.imglogos {
-  width: 15em;
-  margin: 2em; }
+  color: #460180;
+  display: block;
+  font-size: 60px;
+  letter-spacing: 0px;
+  line-height: 60px;
+  padding-top: 5px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 -2px 1px #ccc;
+  font-weight: 600; }
 
 /*# sourceMappingURL=main.css.map */
