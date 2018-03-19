@@ -46,5 +46,27 @@ $('.nav li a').on('click', function () {
 });
 
 
+   $('#contact-us').submit(function(e) {
+      let name = document.getElementById('name');
+      let email = document.getElementById('mail');
+      let message = document.getElementById('message');
+      if (!name.value || !email.value || !message.value) {
+        alertify.error('Please check your entries');
+        return false;
+      } else {
+        $.ajax({
+          url: 'https://formspree.io/evelyn.parra.rojas@gmail.com',
+          method: 'POST',
+          data: $('#contact-us').serialize(),
+          datatype: 'json'
+        });
+        e.preventDefault();
+        $(this).get(0).reset();
+        return alertify.success('Message sent');
+      }
+    });
+
+
+
 
 

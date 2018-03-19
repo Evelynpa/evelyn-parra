@@ -342,15 +342,15 @@
         <div class="content right illustration_01">
           <div class="row">
             <!-- Form -->
-            <form id="contact-us" method="post" action="#">
+            <form id="contact-us" >
               <div class="col-xs-12">
                 <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
-                <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                <input type="email" name="email" id="mail" required="required" class="form" placeholder="Email" />
                 <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Empresa" />
                 <textarea name="message" id="message" class="form textarea" placeholder="Mensaje"></textarea>
                 <button type="submit" id="submit" name="submit" class="form-btn semibold">Enviar Mensaje</button>
               </div>
-              <div class="clear"></div>
+              <input type="text" name="_gotcha" style="display:none" />
             </form>
             <div class="alert gray-bg mail-message not-visible-message">
               <strong>Gracias</strong> Su correo ha sido enviado.
@@ -366,10 +366,9 @@
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-
+    <script src="assets/alertify.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-
   <script src="assets/js/app.js"></script>
 
 </body>
