@@ -1,7 +1,99 @@
 //fondo
 body{
-    //box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+}
+// nav
+.wrrapNavbar{
+    /*background-color: rgba(0,0,0,.6); */
+   position: absolute;
+   width: 100%;
+}
+.navbar-default{
+   background-color: transparent;
+   border-bottom: 0px;
+   border: 0px;
+   padding: 0;
+   margin: 0;
+   border-radius: 0;
+   padding-top: 20px;
+   height: 100px;
+}
+.navbar-default .navbar-brand{
+   font-size: 30px;
+   -webkit-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+}
+
+.navbar-default .navbar-brand,.navbar-default .navbar-brand:hover{
+   color: #fff;
+   margin-left: 110px !important;
+}
+
+.navbar-right {
+   float: right!important;
+   margin-right: 63px !important;
+}
+
+.shrink{
+   background-color: rgba(111, 5, 197, 0.4) !important;
+   height: 60px;
+   padding-top: 0;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+}
+
+.shrink .navbar-brand{
+   font-size: 20px;
+}
+
+.navbar-default .navbar-brand span{
+   color: #00ffe7;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+   background: transparent;
+   color: #00ffe7;
+}
+
+.navbar-default .navbar-nav>li>a{
+   color: #fff;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+
+.firstSection{
+   height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0)),url('../assets/img/fondoBlancoEcritorioSinPantalla.png');
+   background-attachment: fixed;
+   background-position: center;
+   -webkit-background-size: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#aboutMe, #habilities, #projects, #contact{
+   height: 100vh;
+}
+#aboutMe{
+ background-color: #e8cdfe;
+}
+#habilities{
+   background-color: #f3e6fe;
+}
+#projects{
+   background-color: #e8cdfe;
+   height: 120vh;
+}
+#contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0));
+}
+// generales
+.fondosRow{
+    padding: 3em
 }
 
 // header
@@ -20,68 +112,327 @@ body{
     right: 0;
 }
 #layer_1{
-     background-image: url('../assets/img/cafe.png');
+    background-image: url('../assets/img/cafe.png');
     background-repeat: no-repeat;
     background-position:50% 200px;  
     margin-top: 0px;
     background-size: 16em 16em
 }
 .name{
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  margin-top: 150px
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    margin-top: 120px;
+    padding: 2em;
 }
 h1{
-
-    color: #460180;
-    display: block;
+    display: inline-block;
+    color: #fff;
     font-size: 90px;
     letter-spacing: 0px;
     line-height: 60px;
-    padding-top: 5px;
-   text-shadow: 0 8px 8px rgba(0,0,0,0.5), 0 -2px 1px #ccc;
+    padding: 20px;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.5);//, 0 -2px 1px #ccc;
     text-transform: uppercase;
-    font-weight: 800;
-
+   
 }
 h2{
-    color: #460180;
+    color: #fff;
     display: block;
-    font-size: 60px;
+    font-size: 5rem;
     letter-spacing: 0px;
     line-height: 60px;
     padding-top: 5px;
-   text-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 -2px 1px #ccc;
-    font-weight: 600;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.5)//, 0 -2px 1px #fff;
+}
+// Sobre mi
+.fotoBox{
+    text-align: center;
+    margin-top: 5%;
+}
+.minddleMe{
+    background-color: #B17BE0;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    // padding: 4.2em;
+    // padding-bottom: 8em
 
 }
 
-// Sobre mi
-// #containerDatos{
-//  background-image: url('../assets/img/fondo2.png');
-// }
-// .containerDatos{
-//     padding: 1em;
-//     padding-left: 5em
-// }
+// logos programacion
+.icon{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.iconSig{
+    margin-bottom: 1em;
+}
+.dev{
+    width: 5em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 -2px 1px #fff;
+    border-radius: 10%;
+}
+.fire{
+    width: 4em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 -2px 1px #fff;
+    border-radius: 10%
+}
+.sql{
+    width: 6em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 -2px 1px #fff;
+    border-radius: 10%
+}
+.colEspace{
+    margin-bottom: 3em
+}
+.habilityTitle{
 
-// // logos programacion
-// #colorImgLogos{
-//     background-image: url('../assets/img/fondo-morado.jpg');
+    text-align: center;
+}
+.paragraphOne{
+    font-size: 2em
+}
+.newsIcons{
+    margin-top: 5em;
+}
+.cicle{
+	display: inline-block;
+	width: 9em;
+	height: 9em;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 2px solid #fff;
+}
+
+// projects
+.imglogos{
+    width: 8em;
+    margin: 2em
+}
+.colProjects{
+    background-color: rgb(216, 211, 211);
+    border: 1px solid #fff;
+}
+
+// contacto
+#contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#00ffe7;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    font-weight: 500;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background: rgba(111, 5, 197, 0.7) ;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+center{
+  margin-top:330px;
+}
+
+
+.content {
+    font-size: 1.875rem;
+    color: #262626;
+    background-size: 49% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .right {
+    padding: 1.618em 6.472em 3.236em 50%;
+    background-position: 0 50%;
+  }
+  .illustration_01 {
+    background-image: url("../assets/img/imagenNotebook.png");
+  }
+  .left {
+    padding: 1em;
+    background-position: 100% 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: 500
+  }
+  .illustration_02 {
+    background-color: rgba(111, 5, 197, 0.7) !important;
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Large devices (large desktops, 1200px and up) */
+// @media (max-width:1200px) {  }
+// /* Medium devices (desktops, 992px and up) */
+// @media (max-width:992px) {  }
+// /* Small devices (tablets, 768px and up) */
+// @media (max-width:768px) {  
+//     .img-parallax{
+//         display: none
+//     }
+//     h1{
+//         font-size: 60px;
+//         padding: 5px;
+//     }
+//     h2{
+//         font-size: 40px;
+//     }
+//       // Sobre mi
+//       .containerDatos{
+//         margin-top: 10em;
+//         }
 // }
-// .imglogosIcon{
-//     width: 8em;
-//     margin: 2em
-// }
-// // projects
-// .sectionProyects{
-//     background-image: url('../assets/img/fondo2.png');
-// }
-// .imglogos{
-//     width: 15em;
-//     margin: 2em
-// }
+// @media (max-width:550px) { 
+//     .img-parallax{
+//         display: none
+//     }
+//     .name{
+//        width: 100%;
+//       position: absolute;
+//       top: 20%;
+//       margin-top: 70px;
+//       padding: 2em;
+//     }
+//     h1{
+//         font-size: 50px; 
+//         padding: 5px;
+//     }
+//     h2{
+//         font-size: 25px;
+//         padding-top: 0px;
+//     }
+//     .fotoPerfil{
+//           width: 15em;
+//         }
+//      // Sobre mi
+//     .containerDatos{
+//     margin-top: 10em;
+//     }
+//  }
+
+
+
+
 
 
