@@ -1,7 +1,20 @@
 (function load() {
 
 })();
+window.onload = function () {
+    $(window).scroll(function () {
+        $scrol = $(document).scrollTop();
+        console.log($scrol);
+        if ($scrol > 60) {
+            $('.navbar').addClass('shrink');
+            $('.navbar').addClass('navbar-fixed-top');
+        }
+        else {
+            $('.navbar').removeClass('shrink');
+        }
 
+    });
+};
 // function parallax() {
 //     let layer_1 = document.getElementById('layer_1');
 
@@ -16,21 +29,7 @@
 
 
 
-$(window).scroll(function () {
-    $scrol = $(document).scrollTop();
-    console.log($scrol);
-    if ($scrol > 60) {
-        $('.navbar').addClass('shrink');
-        $('.navbar').addClass('navbar-fixed-top');
-    }
-    else {
-        $('.navbar').removeClass('shrink');
-    }
 
-
-
-
-});
 
 $('.nav li a').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -46,25 +45,25 @@ $('.nav li a').on('click', function () {
 });
 
 
-   $('#contact-us').submit(function(e) {
-      let name = document.getElementById('name');
-      let email = document.getElementById('mail');
-      let message = document.getElementById('message');
-      if (!name.value || !email.value || !message.value) {
-        alertify.error('Please check your entries');
-        return false;
-      } else {
-        $.ajax({
-          url: 'https://formspree.io/evelyn.parra.rojas@gmail.com',
-          method: 'POST',
-          data: $('#contact-us').serialize(),
-          datatype: 'json'
-        });
-        e.preventDefault();
-        $(this).get(0).reset();
-        return alertify.success('Message sent');
-      }
-    });
+// $('#contact-us').submit(function (e) {
+//     let name = document.getElementById('name');
+//     let email = document.getElementById('mail');
+//     let message = document.getElementById('message');
+//     if (!name.value || !email.value || !message.value) {
+//         alertify.error('Please check your entries');
+//         return false;
+//     } else {
+//         $.ajax({
+//             url: 'https://formspree.io/evelyn.parra.rojas@gmail.com',
+//             method: 'POST',
+//             data: $('#contact-us').serialize(),
+//             datatype: 'json'
+//         });
+//         e.preventDefault();
+//         $(this).get(0).reset();
+//         return alertify.success('Message sent');
+//     }
+// });
 
 
 
