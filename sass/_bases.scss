@@ -76,7 +76,7 @@ body{
    background-repeat: no-repeat;
 }
 #aboutMe, #habilities, #projects, #contact{
-   height: 100vh;
+   min-height: 100vh;
 }
 #aboutMe{
  background-color: #e8cdfe;
@@ -387,49 +387,57 @@ center{
 // /* Medium devices (desktops, 992px and up) */
 // @media (max-width:992px) {  }
 // /* Small devices (tablets, 768px and up) */
-// @media (max-width:768px) {  
-//     .img-parallax{
-//         display: none
-//     }
-//     h1{
-//         font-size: 60px;
-//         padding: 5px;
-//     }
-//     h2{
-//         font-size: 40px;
-//     }
-//       // Sobre mi
-//       .containerDatos{
-//         margin-top: 10em;
-//         }
-// }
-// @media (max-width:550px) { 
-//     .img-parallax{
-//         display: none
-//     }
-//     .name{
-//        width: 100%;
-//       position: absolute;
-//       top: 20%;
-//       margin-top: 70px;
-//       padding: 2em;
-//     }
-//     h1{
-//         font-size: 50px; 
-//         padding: 5px;
-//     }
-//     h2{
-//         font-size: 25px;
-//         padding-top: 0px;
-//     }
-//     .fotoPerfil{
-//           width: 15em;
-//         }
-//      // Sobre mi
-//     .containerDatos{
-//     margin-top: 10em;
-//     }
-//  }
+@media (max-width:768px) {  
+  // menu
+  .navbar-collapse{
+    background-color: rgba(111, 5, 197, 0.6) !important;
+  }
+    // .img-parallax{
+    //     display: none
+    // }
+    // h1{
+    //     font-size: 60px;
+    //     padding: 5px;
+    // }
+    // h2{
+    //     font-size: 40px;
+    // }
+    //   // Sobre mi
+    //   .containerDatos{
+    //     margin-top: 10em;
+    //     }
+}
+@media (max-width:550px) { 
+   // menu
+   .navbar-collapse{
+    background-color: rgba(111, 5, 197, 0.6) !important;
+  }
+    // .img-parallax{
+    //     display: none
+    // }
+    // .name{
+    //    width: 100%;
+    //   position: absolute;
+    //   top: 20%;
+    //   margin-top: 70px;
+    //   padding: 2em;
+    // }
+    // h1{
+    //     font-size: 50px; 
+    //     padding: 5px;
+    // }
+    // h2{
+    //     font-size: 25px;
+    //     padding-top: 0px;
+    // }
+    // .fotoPerfil{
+    //       width: 15em;
+    //     }
+    //  // Sobre mi
+    // .containerDatos{
+    // margin-top: 10em;
+    // }
+ }
 
 
 

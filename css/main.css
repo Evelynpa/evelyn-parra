@@ -5865,7 +5865,7 @@ body {
   background-repeat: no-repeat; }
 
 #aboutMe, #habilities, #projects, #contact {
-  height: 100vh; }
+  min-height: 100vh; }
 
 #aboutMe {
   background-color: #e8cdfe; }
@@ -6124,5 +6124,11 @@ center {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Large devices (large desktops, 1200px and up) */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: rgba(111, 5, 197, 0.6) !important; } }
+@media (max-width: 550px) {
+  .navbar-collapse {
+    background-color: rgba(111, 5, 197, 0.6) !important; } }
 
 /*# sourceMappingURL=main.css.map */
