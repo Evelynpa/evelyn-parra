@@ -5865,7 +5865,8 @@ body {
   background-repeat: no-repeat; }
 
 #aboutMe, #habilities, #projects, #contact {
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-top: 4em; }
 
 #aboutMe {
   background-color: #e8cdfe; }
@@ -5879,6 +5880,9 @@ body {
 
 #contact {
   background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0)); }
+
+.contact {
+  padding-top: 4em; }
 
 .fondosRow {
   padding: 3em; }
