@@ -542,29 +542,131 @@ figure.effect-oscar:hover img {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Large devices (large desktops, 1200px and up) */
-// @media (max-width:1200px) {  }
+ @media (max-width:1920px) { 
+  #aboutMe{
+    min-height: 130vh;
+  }
+  }
+  @media (max-width:1033px){
+    .grid figure {
+      min-width: 28em;
+      max-width: 28em;
+      width: 28%;
+    }
+    #projects{
+      height: 180vh;
+  }
+  }
+  @media (max-width:991px){
+
+    #projects{
+      height: 110vh;
+  }
+  }
+  @media (max-width:975px){
+    .grid figure {
+      min-width: 23em;
+      max-width: 23em;
+      width: 28%;
+    }
+
+    .grid figure h2 {
+      word-spacing: -0.9em;
+      font-weight: 300;
+      line-height: 1em;
+      font-size: 2.5em
+    }
+    #projects{
+      height: 120vh;
+  }
+  }
+  @media (max-width:920px){
+    .grid figure {
+      min-width: 23em;
+      max-width: 23em;
+      width: 28%;
+    }
+    .grid figure h2 {
+      word-spacing: -0.9em;
+      font-weight: 300;
+      line-height: 1em;
+      font-size: 2.5em
+    }
+    #projects{
+      height: 120vh;
+  }
+  }
+  @media (max-width:850px){
+    .grid figure {
+      min-width: 23em;
+      max-width: 23em;
+      width: 28%;
+    }
+  
+    .grid figure h2 {
+      word-spacing: -0.9em;
+      font-weight: 300;
+      line-height: 1em;
+      font-size: 2.5em
+    }
+    #projects{
+      height: 100vh;
+  }
+  }
+  @media (max-width:829px){
+    .grid figure {
+      min-width: 20em;
+      max-width: 20em;
+      width: 28%;
+    }
+   
+    .grid figure h2 {
+      word-spacing: -0.15em;
+      font-weight: 300;
+      line-height: 1em;
+      font-size: 1.8em;
+      margin-top: -23px
+    }
+  }
 // /* Medium devices (desktops, 992px and up) */
-// @media (max-width:992px) {  }
+// @media (max-width:992px) {  
+
+// }
 // /* Small devices (tablets, 768px and up) */
 @media (max-width:768px) {  
-  // menu
-  .navbar-collapse{
-    background-color: rgba(111, 5, 197, 0.6) !important;
+ // menu
+ .navbar-collapse{
+  background-color: rgba(111, 5, 197, 0.6) !important;
+}
+
+  h1{
+      font-size: 5em; 
+      padding: 5px;
   }
-    // .img-parallax{
-    //     display: none
-    // }
-    // h1{
-    //     font-size: 60px;
-    //     padding: 5px;
-    // }
-    // h2{
-    //     font-size: 40px;
-    // }
-    //   // Sobre mi
-    //   .containerDatos{
-    //     margin-top: 10em;
-    //     }
+ 
+  .grid {
+    padding: 1em 4em 4em 0em;
+  }
+  #projects{
+      height: 200vh;
+  }
+  .minddleMe{
+    padding: 0em 0em;
+}
+#aboutMe{
+  min-height: 160vh;
+}
+.grid figure {
+  min-width: 43em;
+  max-width: 43em;
+  width: 28%;
+}
+.grid figure h2 {
+	word-spacing: -0.15em;
+  font-weight: 300;
+  font-size: 3em;
+  margin: 1em 0
+}
 }
 @media (max-width:550px) { 
    // menu
@@ -581,15 +683,71 @@ figure.effect-oscar:hover img {
       padding: 1em 4em 4em 0em;
     }
     #projects{
-        height: 180vh;
+        height: 200vh;
     }
     .minddleMe{
       padding: 0em 0em;
   }
+  .minddleMe{
+    padding: 0em 0em;
+}
   #aboutMe{
     min-height: 130vh;
   }
+  .grid figure {
+    min-width: 35em;
+    max-width: 35em;
+    width: 28%;
+  }
+  .grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 1em 0
+  }
  }
+ @media (max-width:400px) { 
+  // menu
+  .navbar-collapse{
+   background-color: rgba(111, 5, 197, 0.6) !important;
+ }
+ .navbar-brand{
+  display: none
+}
+   h1{
+       font-size: 4em; 
+       padding: 5px;
+   }
+   h2{
+    font-size: 3em; 
+    padding: 5px;
+}
+  
+   .grid {
+     padding: 1em 4em 4em 0em;
+   }
+   #projects{
+       height: 130vh;
+   }
+   .minddleMe{
+     padding: 0em 0em;
+ }
+ #aboutMe{
+   min-height: 160vh;
+ }
+ .grid figure {
+   min-width: 20em;
+   max-width: 20em;
+   width: 28%;
+ }
+ .grid figure h2 {
+   word-spacing: -0.15em;
+   font-weight: 300;
+   line-height: 1em;
+   font-size: 1.8em;
+   margin-top: -23px
+ }
+}
 
 
 
