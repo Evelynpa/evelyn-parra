@@ -2,6 +2,7 @@
 body{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    background-color: #7029b9;
 }
 // nav
 .wrrapNavbar{
@@ -67,7 +68,6 @@ body{
 
 .firstSection{
    height: 100vh;
-   width: 100%;
    background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0)),url('../assets/img/fondoBlancoEcritorioSinPantalla.png');
    background-attachment: fixed;
    background-position: center;
@@ -81,25 +81,43 @@ body{
 }
 #aboutMe{
  background-color: #e8cdfe;
+ -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+ clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+  text-align: center;
+ 
 }
 #habilities{
-   background-color: #f3e6fe;
-}
+   background-color: #7029b9;
+ }
 #projects{
-   background-color: #e8cdfe;
-   height: 120vh;
+ background-color: #fff;
+   height: 180vh;
+   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 86%, 75% 100%, 0 85%, 0 0);
 }
+
 #contact{
-    background: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0));
-   
+    background-color: #7029b9;
 }
 .contact{
   padding-top: 4em
 }
+.footer{
+  background-color: #fff;
+  height: 30vh;
+  -webkit-clip-path: polygon(0px 424px,100% 419px,100% 151px,-4px 62px); 
+     clip-path:  polygon(0px 424px,100% 419px,100% 151px,-4px 62px); 
+}
 // generales
 .fondosRow{
-    padding: 3em
+    padding: 3em;
+   
 }
+#rows1,#rows2, #rows3,#rows4,#rows5,#rows6,#rows7,#rows8,#rows9,#rows10,#rows11,#rows12,#rows13,#rows14,#rows15,#rows16,#rows17,#rows18,#rows19,#rows20,#rows21,#rows22,#rows23,#rows24,#rows25,#rows26,#rows27{
+  margin: 0;
+  padding: 0;
+}
+
 
 // header
 .header{
@@ -124,18 +142,15 @@ body{
     background-size: 16em 16em
 }
 .name{
-    width: 100%;
     position: absolute;
     top: 45%;
     margin-top: 120px;
     padding: 2em;
 }
 h1{
-    display: inline-block;
     color: #fff;
-    font-size: 90px;
+    font-size: 700%;
     letter-spacing: 0px;
-    line-height: 60px;
     padding: 20px;
     text-shadow: 0 4px 8px rgba(0,0,0,0.5);//, 0 -2px 1px #ccc;
     text-transform: uppercase;
@@ -148,23 +163,30 @@ h2{
     letter-spacing: 0px;
     line-height: 60px;
     padding-top: 5px;
-    text-shadow: 0 4px 8px rgba(0,0,0,0.5)//, 0 -2px 1px #fff;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.5);//, 0 -2px 1px #fff;
+
 }
 // Sobre mi
 .fotoBox{
     text-align: center;
-    margin-top: 5%;
 }
 .minddleMe{
-    background-color: #B17BE0;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
-    color: #fff;
-    // padding: 4.2em;
-    // padding-bottom: 8em
-
+    padding: 0em 8em;
 }
-
+.fotoPerfil{
+  text-align: center;
+  width: 13em
+}
+.aboutMe{
+  font-weight: 500;
+  margin-top: 2em
+}
+.iconAboutMe{
+  font-size: 2em;
+  color: #00ffe7
+}
 // logos programacion
 .icon{
     margin-top: 2em;
@@ -174,26 +196,24 @@ h2{
     margin-bottom: 1em;
 }
 .dev{
-    width: 5em;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 -2px 1px #fff;
-    border-radius: 10%;
+    width: 4em;
+    // box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 -2px 1px #fff;
+    // border-radius: 10%;
 }
 .fire{
-    width: 4em;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 -2px 1px #fff;
-    border-radius: 10%
+    width: 3.5em;
 }
 .sql{
     width: 6em;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 -2px 1px #fff;
-    border-radius: 10%
 }
+
 .colEspace{
-    margin-bottom: 3em
+    margin-bottom: 3em;
+    
 }
 .habilityTitle{
-
     text-align: center;
+    margin-bottom: 1em
 }
 .paragraphOne{
     font-size: 2em
@@ -203,22 +223,32 @@ h2{
 }
 .cicle{
 	display: inline-block;
-	width: 9em;
-	height: 9em;
+	width: 6em;
+	height: 6em;
 	border-radius: 200px 200px 200px 200px;
 	-moz-border-radius: 200px 200px 200px 200px;
 	-webkit-border-radius: 200px 200px 200px 200px;
-	border: 2px solid #fff;
+  border: 2px solid #00ffe7;
+  background-color: #fff;
+  padding-top: 12px
+}
+.nameIcon{
+  text-align: center;
+  color: #fff;
+  margin-left: 0.7em
 }
 
 // projects
 .imglogos{
-    width: 8em;
-    margin: 2em
+    width: 7em;
 }
 .colProjects{
+  box-sizing: border-box;
     background-color: rgb(216, 211, 211);
-    border: 1px solid #fff;
+    margin: 0.5em
+}
+.titleProjects{
+   color: #7029b9
 }
 
 // contacto
@@ -228,6 +258,9 @@ h2{
 
   .contact-text{
     margin:45px auto;
+  }
+  .titleContact{
+    margin-top: 1.5em;
   }
 
   .mail-message-area{
@@ -261,24 +294,25 @@ h2{
   .form{
     width: 100%;
     padding: 15px;
-    background:#f8f8f8;
+    background-color: rgba(255, 255, 255, 0.1);
     border:1px solid rgba(0, 0, 0, 0.075);
     margin-bottom:25px;
-    color:#727272 !important;
+    color:#fff !important; 
     font-size:13px;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
+    border-radius: 25px
   }
 
   .form:hover{
-    border:1px solid #8BC3A3;
+    border:1px solid #00ffe7;
   }
 
   .form:focus{
     color: white;
     outline: none;
-    border:1px solid #8BC3A3;
+    border:1px solid #00ffe7;
   }
 
   .textarea{
@@ -287,29 +321,7 @@ h2{
     max-width: 100%;
   }
   
-/* Generic Button Styles */
 
-  .button{
-    padding:8px 12px;
-    background:#0A5175;
-    display: block;
-    width:120px;
-    margin:10px 0 0px 0;
-    border-radius:3px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    text-align:center;
-    font-size:0.8em;
-    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  }
-
-  .button:hover{
-    background:#8BC3A3;
-    color:white;
-  }
 
 /* Send Button Styles */
 
@@ -318,10 +330,10 @@ h2{
     display: block;
     height: auto;
     padding:15px;
-    color:#fff;
-    background:#00ffe7;
-    border:none;
-    border-radius:3px;
+    color:#00ffe7;
+    background:transparent;
+    border:1px solid #00ffe7;
+    border-radius:25px;
     outline: none;
     font-weight: 500;
     -webkit-transition: all 0.3s;
@@ -332,11 +344,13 @@ h2{
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
   }
-
+  ::placeholder { 
+    color:#e6e6e6; 
+  }
   .form-btn:hover{
-    background: rgba(111, 5, 197, 0.7) ;
-    color: white;
-    border:none;
+    background: #595959;
+    color: #00ffe7;
+    border:1px solid #00ffe7;
   }
 
   .form-btn:active{
@@ -346,31 +360,171 @@ center{
   margin-top:330px;
 }
 
+// footer
+.textFooter{
+  text-align: center;
+  margin-top: 10em;
+  font-weight: bold
+}
 
-.content {
-    font-size: 1.875rem;
-    color: #262626;
-    background-size: 49% auto;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-  .right {
-    padding: 1.618em 6.472em 3.236em 50%;
-    background-position: 0 50%;
-  }
-  .illustration_01 {
-    background-image: url("../assets/img/imagenNotebook.png");
-  }
-  .left {
-    padding: 1em;
-    background-position: 100% 50%;
-    text-align: center;
-    color: #fff;
-    font-weight: 500
-  }
-  .illustration_02 {
-    background-color: rgba(111, 5, 197, 0.7) !important;
-  }
+// hover efects******************************
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 4em 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 30em;
+	max-width: 480px;
+	max-height: 360px;
+	width: 28%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+  opacity: 0;
+  width: 28%;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Individual effects */
+
+figure.effect-oscar {
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+}
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+	padding: 3em;
+	background-color: rgba(58,52,42,0.7);
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+}
+
+figure.effect-oscar h2 {
+	margin: 1% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0.4;
+}
+
+
+
+
+
+
 
 
   
@@ -417,31 +571,24 @@ center{
    .navbar-collapse{
     background-color: rgba(111, 5, 197, 0.6) !important;
   }
-    // .img-parallax{
-    //     display: none
-    // }
-    // .name{
-    //    width: 100%;
-    //   position: absolute;
-    //   top: 20%;
-    //   margin-top: 70px;
-    //   padding: 2em;
-    // }
-    // h1{
-    //     font-size: 50px; 
-    //     padding: 5px;
-    // }
-    // h2{
-    //     font-size: 25px;
-    //     padding-top: 0px;
-    // }
-    // .fotoPerfil{
-    //       width: 15em;
-    //     }
-    //  // Sobre mi
-    // .containerDatos{
-    // margin-top: 10em;
-    // }
+
+    h1{
+        font-size: 5em; 
+        padding: 5px;
+    }
+   
+    .grid {
+      padding: 1em 4em 4em 0em;
+    }
+    #projects{
+        height: 180vh;
+    }
+    .minddleMe{
+      padding: 0em 0em;
+  }
+  #aboutMe{
+    min-height: 130vh;
+  }
  }
 
 
