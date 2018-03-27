@@ -656,6 +656,9 @@ figure.effect-oscar:hover img {
 #aboutMe{
   min-height: 160vh;
 }
+.centerImg{
+  padding-left: 50px
+}
 .grid figure {
   min-width: 43em;
   max-width: 43em;
@@ -668,6 +671,33 @@ figure.effect-oscar:hover img {
   margin: 1em 0
 }
 }
+@media (max-width:700px) { 
+  .centerImg{
+    padding-left: 30px
+  }
+}
+@media (max-width:670px) { 
+  .centerImg{
+    padding-left: 0px
+  }
+}
+@media (max-width:623px) { 
+  .centerImg{
+    padding-left: 0px
+  }
+  .grid figure {
+    min-width: 40em;
+    max-width: 40em;
+    width: 28%;
+  }
+  .grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 1em 0
+  }
+}
+
 @media (max-width:550px) { 
    // menu
    .navbar-collapse{
@@ -706,6 +736,54 @@ figure.effect-oscar:hover img {
     margin: 1em 0
   }
  }
+ @media (max-width:510px) { 
+  .centerImg{
+    padding-left: 0px
+  }
+  .grid figure {
+    min-width: 34em;
+    max-width: 34em;
+    width: 28%;
+  }
+  .grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 1em 0
+  }
+}
+@media (max-width:496px) { 
+  .centerImg{
+    padding-left: 0px
+  }
+  .grid figure {
+    min-width: 32em;
+    max-width: 32em;
+    width: 28%;
+  }
+  .grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 1em 0
+  }
+}
+@media (max-width:468px) { 
+  .centerImg{
+    padding-left: 0px
+  }
+  .grid figure {
+    min-width: 30em;
+    max-width: 30em;
+    width: 28%;
+  }
+  .grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 1em 0
+  }
+}
  @media (max-width:400px) { 
   // menu
   .navbar-collapse{
