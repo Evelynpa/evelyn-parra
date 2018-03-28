@@ -425,13 +425,17 @@ center{
   // }
   }
   @media (max-width:920px){
-
+    .navbar-brand{
+      display: none
+    }
   //   #projects{
   //     height: 120vh;
   // }
   }
   @media (max-width:850px){
-
+    .navbar-brand{
+      display: none
+    }
   //   #projects{
   //     height: 100vh;
   // }
@@ -444,14 +448,14 @@ center{
 // /* Small devices (tablets, 768px and up) */
 // @media (max-width:768px) {  
 //  // menu
-//  .navbar-collapse{
-//   background-color: rgba(111, 5, 197, 0.6) !important;
-// }
+ .navbar-collapse{
+  background-color: rgba(111, 5, 197, 0.6) !important;
+}
 
-//   h1{
-//       font-size: 5em; 
-//       padding: 5px;
-//   }
+  h1{
+      font-size: 5em; 
+      padding: 5px;
+  }
 
 //   #projects{
 //       height: 200vh;
@@ -465,16 +469,19 @@ center{
 
 // }
 
-// @media (max-width:550px) { 
+@media (max-width:550px) { 
 //    // menu
-//    .navbar-collapse{
-//     background-color: rgba(111, 5, 197, 0.6) !important;
-//   }
+   .navbar-collapse{
+    background-color: rgba(111, 5, 197, 0.6) !important;
+  }
+  .navbar-brand{
+    display: none
+  }
 
-//     h1{
-//         font-size: 5em; 
-//         padding: 5px;
-//     }
+    h1{
+        font-size: 5em; 
+        padding: 5px;
+    }
 //     #projects{
 //         height: 200vh;
 //     }
@@ -486,25 +493,25 @@ center{
 //     min-height: 130vh;
 //   }
 
-//  }
+  }
 
 
-//  @media (max-width:400px) { 
+ @media (max-width:400px) { 
 //   // menu
-//   .navbar-collapse{
-//    background-color: rgba(111, 5, 197, 0.6) !important;
-//  }
-//  .navbar-brand{
-//   display: none
-// }
-//    h1{
-//        font-size: 4em; 
-//        padding: 5px;
-//    }
-//    h2{
-//     font-size: 3em; 
-//     padding: 5px;
-// }
+  .navbar-collapse{
+   background-color: rgba(111, 5, 197, 0.6) !important;
+ }
+ .navbar-brand{
+  display: none
+}
+   h1{
+       font-size: 3em; 
+       padding: 5px;
+   }
+   h2{
+    font-size: 2em; 
+    padding: 5px;
+}
 
 //    #projects{
 //        height: 130vh;
@@ -515,8 +522,7 @@ center{
 //  #aboutMe{
 //    min-height: 160vh;
 //  }
-
-// }
+ }
 
 
 

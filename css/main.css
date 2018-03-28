@@ -6131,5 +6131,42 @@ center {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Large devices (large desktops, 1200px and up) */
+@media (max-width: 920px) {
+  .navbar-brand {
+    display: none; } }
+@media (max-width: 850px) {
+  .navbar-brand {
+    display: none; } }
+.navbar-collapse {
+  background-color: rgba(111, 5, 197, 0.6) !important; }
+
+h1 {
+  font-size: 5em;
+  padding: 5px; }
+
+@media (max-width: 550px) {
+  .navbar-collapse {
+    background-color: rgba(111, 5, 197, 0.6) !important; }
+
+  .navbar-brand {
+    display: none; }
+
+  h1 {
+    font-size: 5em;
+    padding: 5px; } }
+@media (max-width: 400px) {
+  .navbar-collapse {
+    background-color: rgba(111, 5, 197, 0.6) !important; }
+
+  .navbar-brand {
+    display: none; }
+
+  h1 {
+    font-size: 3em;
+    padding: 5px; }
+
+  h2 {
+    font-size: 2em;
+    padding: 5px; } }
 
 /*# sourceMappingURL=main.css.map */
