@@ -403,71 +403,23 @@ center{
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Large devices (large desktops, 1200px and up) */
- @media (max-width:1920px) { 
 
-  }
-  @media (max-width:1033px){
-
-  //   #projects{
-  //     height: 180vh;
-  // }
-  }
-  @media (max-width:991px){
-
-  //   #projects{
-  //     height: 110vh;
-  // }
-  }
-  @media (max-width:975px){
-
-  //   #projects{
-  //     height: 120vh;
-  // }
-  }
   @media (max-width:920px){
     .navbar-brand{
       display: none
     }
-  //   #projects{
-  //     height: 120vh;
-  // }
   }
   @media (max-width:850px){
     .navbar-brand{
       display: none
     }
-  //   #projects{
-  //     height: 100vh;
-  // }
-  }
-
-// /* Medium devices (desktops, 992px and up) */
-// @media (max-width:992px) {  
-
-// }
-// /* Small devices (tablets, 768px and up) */
-// @media (max-width:768px) {  
-//  // menu
- .navbar-collapse{
-  background-color: rgba(111, 5, 197, 0.6) !important;
-}
-
   h1{
       font-size: 5em; 
       padding: 5px;
   }
 
-//   #projects{
-//       height: 200vh;
-//   }
-//   .minddleMe{
-//     padding: 0em 0em;
-// }
-// #aboutMe{
-//   min-height: 160vh;
-// }
 
-// }
+ }
 
 @media (max-width:550px) { 
 //    // menu
@@ -513,15 +465,6 @@ center{
     padding: 5px;
 }
 
-//    #projects{
-//        height: 130vh;
-//    }
-//    .minddleMe{
-//      padding: 0em 0em;
-//  }
-//  #aboutMe{
-//    min-height: 160vh;
-//  }
  }
 
 

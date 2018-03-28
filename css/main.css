@@ -6136,14 +6136,11 @@ center {
     display: none; } }
 @media (max-width: 850px) {
   .navbar-brand {
-    display: none; } }
-.navbar-collapse {
-  background-color: rgba(111, 5, 197, 0.6) !important; }
+    display: none; }
 
-h1 {
-  font-size: 5em;
-  padding: 5px; }
-
+  h1 {
+    font-size: 5em;
+    padding: 5px; } }
 @media (max-width: 550px) {
   .navbar-collapse {
     background-color: rgba(111, 5, 197, 0.6) !important; }
